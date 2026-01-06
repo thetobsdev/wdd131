@@ -4,11 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome To WDD131</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals | Tobiloba Oluwasegun | HTML, CSS, JavaScript fundamentals">
+    <meta name="author" content="Tobiloba Oluwasegun">
+    <title>WDD 131 – Dynamic Web Fundamentals – Tobiloba Oluwasegun</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>Welcome To WDD131 Course.</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng"
+                target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Tobiloba Oluwasegun</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="Photo of Tobiloba Oluwasegun">
+            <p>
+                I am a student of BYU–Idaho studying web development. I enjoy learning
+                how to build modern, dynamic, and accessible websites using HTML, CSS,
+                and JavaScript.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Nigeria</h2>
+            <img src="images/nigeria.png" alt="Map or flag of Nigeria">
+            <p>
+                Nigeria is a diverse and vibrant country in West Africa, known for its
+                culture, creativity, and growing technology ecosystem.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span> Tobiloba Oluwasegun | Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
