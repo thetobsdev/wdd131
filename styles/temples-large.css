@@ -1,0 +1,90 @@
+@media (min-width: 40rem) {
+
+    /* HEADER */
+    header {
+        background-color: lightblue;
+        padding: 1.5rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* HORIZONTAL NAVIGATION */
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.5rem;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+    }
+
+    nav a:hover,
+    nav a.active {
+        background-color: #1e4f91;
+        color: white;
+        border-radius: 4px;
+    }
+
+    /* HIDE HAMBURGER BUTTON ON LARGE SCREENS */
+    #menu {
+        display: none;
+    }
+
+    /* MAIN LAYOUT */
+    main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    /* 9-IMAGE GRID */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columns */
+        grid-template-rows: repeat(3, auto);
+        /* 3 rows */
+        gap: 1.5rem;
+        /* space between images */
+    }
+
+    figure {
+        background-color: #e0f0ff;
+        padding: 0.5rem;
+        border-radius: 5px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    figure:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    figcaption {
+        font-weight: 500;
+        color: #1e4f91;
+        margin-top: 0.5rem;
+    }
+
+    /* FOOTER */
+    footer {
+        max-width: 1200px;
+        margin: 2rem auto 0 auto;
+        text-align: center;
+        background-color: lightblue;
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+
+}

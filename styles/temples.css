@@ -1,0 +1,101 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #eaf6ff;
+    color: #222222;
+}
+
+/* Header */
+header {
+    background-color: #6ec1e4;
+    color: white;
+    padding: 1rem;
+}
+
+/* Flexbox Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation list */
+nav ul {
+    list-style: none;
+    display: none;
+    /* hidden in mobile */
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.open {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0.75rem;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #1e4f91;
+    border-radius: 4px;
+}
+
+/* Hamburger button */
+#menu {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: #1e4f91;
+}
+
+/* Grid for images – MOBILE */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* 1 column */
+    gap: 1rem;
+}
+
+figure {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #6ec1e4;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
