@@ -1,90 +1,54 @@
-@media (min-width: 40rem) {
+/* ======================================
+   Large Screen Layout (768px and above)
+====================================== */
 
-    /* HEADER */
+@media (min-width: 768px) {
+
     header {
-        background-color: lightblue;
-        padding: 1.5rem 2rem;
-        max-width: 1200px;
-        margin: 0 auto;
+        padding: 1.2rem 2rem;
     }
 
-    /* HORIZONTAL NAVIGATION */
+    header h2 {
+        font-size: 1.8rem;
+    }
+
     nav {
-        display: flex;
+        display: flex !important;
+        flex-direction: row;
         justify-content: flex-end;
         gap: 1.5rem;
+        width: auto;
     }
 
     nav a {
         padding: 0.5rem 1rem;
-        text-decoration: none;
-        color: #000;
-        font-weight: 500;
+        border-radius: 5px;
     }
 
-    nav a:hover,
-    nav a.active {
-        background-color: #1e4f91;
-        color: white;
-        border-radius: 4px;
+    nav a:hover {
+        background-color: #145a8d;
     }
 
-    /* HIDE HAMBURGER BUTTON ON LARGE SCREENS */
-    #menu {
-        display: none;
-    }
-
-    /* MAIN LAYOUT */
     main {
         max-width: 1200px;
-        margin: 2rem auto;
-        padding: 1rem;
     }
 
-    h1 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-
-    /* 9-IMAGE GRID */
     .gallery {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /* 3 columns */
-        grid-template-rows: repeat(3, auto);
-        /* 3 rows */
-        gap: 1.5rem;
-        /* space between images */
+        gap: 2rem;
     }
 
     figure {
-        background-color: #e0f0ff;
-        padding: 0.5rem;
-        border-radius: 5px;
-        text-align: center;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     figure:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        transform: translateY(-4px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
     }
 
     figcaption {
-        font-weight: 500;
-        color: #1e4f91;
-        margin-top: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.4;
     }
-
-    /* FOOTER */
-    footer {
-        max-width: 1200px;
-        margin: 2rem auto 0 auto;
-        text-align: center;
-        background-color: lightblue;
-        padding: 1rem;
-        font-size: 0.95rem;
-    }
-
 }
