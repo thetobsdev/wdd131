@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Temple Album featuring the top 9 most beautiful LDS temples with photos and captions.">
+    <meta name="description" content="Temple Album featuring the top 9 most beautiful LDS temples.">
     <meta name="author" content="Tobiloba Oluwasegun">
+
     <title>Temple Album</title>
 
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/temples.js" defer></script>
 
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
 </head>
 
 <body>
+
     <header>
         <h2>Temple Album</h2>
-    <button id="menu" aria-label="Open navigation menu">☰</button>
-        <nav>
+
+        <button id="menu" aria-label="Toggle navigation">&#9776;</button>
+
+        <nav id="navigation">
             <a href="#">Home</a>
             <a href="#">Old</a>
             <a href="#">New</a>
@@ -34,85 +40,81 @@
 
     <main>
         <h1>🌟 Top 9 Most Beautiful LDS Temples</h1>
-    
+
         <section class="gallery">
-    
+
             <figure>
                 <img src="images/tijuana-temple.jpeg" alt="Tijuana Mexico Temple" loading="lazy">
-                <figc>
-                    <strong>Tijuana Mexico Temple — Mexico 🇲🇽 </strong><br>
-                    A stunning temple with Spanish Colonial Revival architecture, beautiful gardens, and a peaceful atmosphere.
-                    </figcaption>
+                <figcaption>
+                    <strong>Tijuana Mexico Temple</strong><br>
+                    A stunning temple with Spanish Colonial Revival architecture.
+                </figcaption>
             </figure>
-    
+
             <figure>
                 <img src="images/laie_hawaii_temple_lds.jpeg" alt="Laie Hawaii Temple" loading="lazy">
                 <figcaption>
-                    <strong>Laie Hawaii Temple — Hawaii, USA 🌴</strong><br>
-                    Framed by palm trees and tropical surroundings, this iconic temple blends beautifully with the Hawaiian landscape.
+                    <strong>Laie Hawaii Temple</strong><br>
+                    Surrounded by palm trees and tropical beauty.
                 </figcaption>
             </figure>
-    
+
             <figure>
                 <img src="images/salt_lake_temple_lds.jpeg" alt="Salt Lake Temple" loading="lazy">
                 <figcaption>
-                    <strong>Salt Lake Temple — Utah, USA 🏙️</strong><br>
-                    Perhaps the most recognized LDS temple in the world, renowned for its neo-Gothic architecture and historic significance.
+                    <strong>Salt Lake Temple</strong><br>
+                    The most iconic LDS temple in the world.
                 </figcaption>
             </figure>
-    
+
             <figure>
                 <img src="images/temple.jpg" alt="San Diego California Temple" loading="lazy">
                 <figcaption>
-                    <strong>San Diego California Temple — California, USA ☀️</strong><br>
-                    Distinctive with 10 spires and a bright white exterior, this temple is one of the most architecturally unique and
-                    dramatic LDS temples.
+                    <strong>San Diego California Temple</strong><br>
+                    Known for its dramatic spires and bright exterior.
                 </figcaption>
             </figure>
-    
+
             <figure>
                 <img src="images/spokane-temple.jpeg" alt="Washington D.C. Temple" loading="lazy">
                 <figcaption>
-                    <strong>Washington D.C. Temple — Maryland, USA</strong><br>
-                    An elegant and grand temple often featured in lists of the most beautiful temples, noted for its tall spires and
-                    sweeping landscaping.
+                    <strong>Washington D.C. Temple</strong><br>
+                    A grand and elegant landmark.
                 </figcaption>
             </figure>
-    
+
             <figure>
                 <img src="images/portlandoregontemple.jpeg" alt="Portland Oregon Temple" loading="lazy">
                 <figcaption>
-                    <strong>Portland Oregon Temple — Oregon, USA 🌲</strong><br>
-                    Known for its graceful lines and wooded setting, this temple offers a peaceful and picturesque view year-round.
+                    <strong>Portland Oregon Temple</strong><br>
+                    Peaceful design surrounded by nature.
                 </figcaption>
             </figure>
-    
+
             <figure>
                 <img src="images/paris-temple.jpeg" alt="Paris France Temple" loading="lazy">
                 <figcaption>
-                    <strong>Paris France Temple — France 🇫🇷</strong><br>
-                    Praised for its European elegance, this temple stands out with sophisticated design elements that reflect its cultural
-                    surroundings.
+                    <strong>Paris France Temple</strong><br>
+                    European elegance and beauty.
                 </figcaption>
             </figure>
-    
+
             <figure>
                 <img src="images/helsinki-temple.jpeg" alt="Helsinki Finland Temple" loading="lazy">
                 <figcaption>
-                    <strong>Helsinki Finland Temple — Finland 🇫🇮</strong><br>
-                    Set on a wooded hilltop with classic granite and refined lines, this temple combines natural beauty with architectural
-                    calm.
+                    <strong>Helsinki Finland Temple</strong><br>
+                    Minimalist and peaceful design.
                 </figcaption>
             </figure>
-    
+
             <figure>
                 <img src="images/papeete_tahiti_temple.jpeg" alt="Papeete Tahiti Temple" loading="lazy">
                 <figcaption>
-                    <strong>Papeete Tahiti Temple — Tahiti 🇵🇫</strong><br>
-                    A tropical temple with a blend of French and Polynesian design elements, set amid lush island scenery.
+                    <strong>Papeete Tahiti Temple</strong><br>
+                    Tropical beauty with island charm.
                 </figcaption>
             </figure>
-    
+
         </section>
     </main>
 
@@ -120,5 +122,7 @@
         <p>&copy; <span id="year"></span> | Tobiloba Oluwasegun | Nigeria</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
+
 </body>
+
 </html>
