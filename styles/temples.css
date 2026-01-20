@@ -71,6 +71,10 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+}
 /* ===== GALLERY GRID ===== */
 .gallery {
     display: grid;

@@ -16,6 +16,11 @@
         padding: 0.5rem 1rem;
     }
 
+    .visually-hidden {
+        position: absolute;
+        left: -10000px;
+    }
+
     /* Gallery layout */
     .gallery {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
