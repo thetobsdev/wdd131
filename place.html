@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Country | Nigeria</title>
+    <link rel="stylesheet" href="css/place.css">
+    <script src="js/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Nigeria</h1>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Landscape of Nigeria" width="1000" height="500">
+            </picture>
+        </section>
+
+        <!-- INFO SECTION -->
+        <section class="info">
+            <h2>About Nigeria</h2>
+            <p>Nigeria is located in West Africa and is known for its rich culture, music, food, and diverse people.</p>
+        </section>
+
+        <!-- WEATHER SECTION -->
+        <section class="weather">
+            <h2>Weather</h2>
+            <p>Temperature: <span id="temp">28</span>°C</p>
+            <p>Wind Speed: <span id="speed">10</span> km/h</p>
+            <p>Wind Chill: <span id="chill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Nigeria</p>
+        <p>Last Modified: <span id="modified"></span></p>
+    </footer>
+
+</body>
+
+</html>

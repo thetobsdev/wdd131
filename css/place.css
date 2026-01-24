@@ -1,0 +1,49 @@
+:root {
+    --primary: #0b6623;
+    --secondary: #ffffff;
+    --accent: #f4c430;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--secondary);
+    color: #222;
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.info,
+.weather {
+    padding: 1rem;
+}
+
+.weather h2::after {
+    content: " ⛅";
+}
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+}
