@@ -1,19 +1,18 @@
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
 header {
-    background-color: #1f3c88;
-    color: white;
-    padding: 1rem;
     text-align: center;
+    padding: 1rem;
+    background-color: #1e3a5f;
+    color: white;
 }
 
 nav {
@@ -24,15 +23,15 @@ nav {
 }
 
 nav a {
-    color: white;
     text-decoration: none;
+    color: white;
+    background-color: #2f5d8a;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 nav a:hover {
-    background-color: #ffd166;
-    color: #000;
+    background-color: #16324f;
 }
 
 main {
@@ -47,31 +46,29 @@ main {
     gap: 1rem;
 }
 
-section article {
+.temple-card {
     border: 1px solid #ccc;
     padding: 1rem;
-    text-align: center;
+    border-radius: 6px;
+    background-color: #f9f9f9;
 }
 
-section img {
+.temple-card img {
     width: 100%;
     height: auto;
+    border-radius: 4px;
 }
 
-/* Footer */
 footer {
-    margin-top: 1rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    font-size: smaller;
-    text-align: left;
-    padding: 0.5rem 0;
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    margin-top: 2rem;
 }
 
-/* ✅ MEDIA QUERY */
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
         align-items: center;
     }
 }
-
