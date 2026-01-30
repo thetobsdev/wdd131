@@ -1,55 +1,77 @@
-body {
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-header {
-    text-align: center;
-    padding: 1rem;
-    background-color: #1e3a5f;
-    color: white;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-nav button {
-    margin: 0.3rem;
+header {
+    background-color: #1f3c88;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
     padding: 0.5rem 1rem;
-    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #ffd166;
+    color: #000;
 }
 
 main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
+    max-width: 1100px;
+    margin: 1rem auto;
     padding: 1rem;
 }
 
-section {
+#temples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+section article {
     border: 1px solid #ccc;
     padding: 1rem;
     text-align: center;
 }
 
-img {
+section img {
     width: 100%;
     height: auto;
-    opacity: 0;
-    animation: fadeIn 1.5s ease forwards;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        filter: brightness(0);
-    }
-
-    to {
-        opacity: 1;
-        filter: brightness(1);
-    }
-}
-
+/* Footer */
 footer {
-    text-align: center;
-    padding: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: smaller;
+    text-align: left;
+    padding: 0.5rem 0;
 }
+
+/* ✅ MEDIA QUERY */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
