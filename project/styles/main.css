@@ -1,0 +1,101 @@
+/* Fonts & Colors */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    color: #0A2540;
+    /* dark blue */
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem;
+}
+
+.star {
+    color: #F5A623;
+    /* gold accent */
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0A2540;
+    font-weight: 500;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: #e6f0ff;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e6f0ff;
+    margin-top: 2rem;
+}
+
+/* Project Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 400px;
+}
+
+input,
+textarea,
+button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #F5A623;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #e09e1c;
+}
