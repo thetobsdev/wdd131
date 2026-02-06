@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer>
+        let count = Number(localStorage.getItem("reviewCount")) || 0;
+        count++;
+        localStorage.setItem("reviewCount", count);
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("count").textContent = count;
+            document.getElementById("year").textContent = new Date().getFullYear();
+        });
+    </script>
+</head>
+
+<body>
+
+    <main class="confirmation">
+        <h1>Thank You!</h1>
+        <p>Your review has been submitted successfully.</p>
+        <p>Total reviews submitted: <strong id="count"></strong></p>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> | Tobiloba Oluwasegun | BYU-Idaho</p>
+    </footer>
+
+</body>
+
+</html>
