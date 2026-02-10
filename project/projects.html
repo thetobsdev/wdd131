@@ -4,33 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>thetobsdev ✪ | Projects</title>
+    <meta name="description" content="Professional web development projects by Thetobsdev.">
+    <title>Thetobsdev | Projects</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles/main.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
     <header>
-        <div class="logo">thetobsdev <span class="star">✪</span></div>
+        <h1>My Projects</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
+            <a href="projects.html" class="active">Projects</a>
             <a href="contact.html">Contact</a>
-            <a href="references.html">References</a>
         </nav>
     </header>
 
     <main>
-        <section id="projects-section">
-            <h1>My Projects</h1>
-            <div id="project-gallery" class="gallery"></div>
+
+        <!-- Intro Section -->
+        <section class="projects-intro">
+            <h2>Real-World Projects</h2>
+            <p>
+                Below are selected projects demonstrating my skills in
+                <strong>HTML, CSS, JavaScript, responsive design, accessibility, and interactivity</strong>.
+                Each project reflects real-world development practices.
+            </p>
         </section>
+
+        <!-- Filter Buttons (Future-proof) -->
+        <section class="project-filters">
+            <button data-filter="all" class="filter-btn active">All</button>
+            <button data-filter="html" class="filter-btn">HTML</button>
+            <button data-filter="css" class="filter-btn">CSS</button>
+            <button data-filter="javascript" class="filter-btn">JavaScript</button>
+        </section>
+
+        <!-- Projects Grid (Filled Dynamically with JS) -->
+        <section class="projects-grid" id="projects">
+            <!-- Projects load here via JavaScript -->
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 thetobsdev | <a href="references.html">References</a></p>
+        <p>© 2026 Thetobsdev | Front-End Web Developer</p>
+        <a href="references.html">References</a>
     </footer>
 
-    <script src="scripts/main.js"></script>
 </body>
 
 </html>

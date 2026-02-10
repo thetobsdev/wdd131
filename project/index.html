@@ -4,38 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>thetobsdev ✪ | Home</title>
+    <meta name="description"
+        content="Thetobsdev – Professional web developer portfolio showcasing projects, skills, and contact information.">
+    <title>Thetobsdev | Home</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
     <header>
-        <div class="logo">thetobsdev <span class="star">✪</span></div>
+        <h1>THETOBSDEV ✦</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
-            <a href="references.html">References</a>
         </nav>
     </header>
 
     <main>
-        <section id="about">
-            <h1>Welcome to my Portfolio</h1>
-            <p>Hi! I'm a web developer. This website showcases my skills, projects, and contact information.</p>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Responsive & Dynamic Web Design</li>
-                <li>Professional Portfolio Projects</li>
-            </ul>
+        <section class="hero">
+            <h2>Creative Web Developer</h2>
+            <p>I design and build modern, responsive, and user-focused websites using HTML, CSS, and JavaScript.</p>
+            <button id="themeBtn">Toggle Theme</button>
+        </section>
+
+        <section>
+            <h2>About Me</h2>
+            <p>I am a passionate front-end web developer focused on building clean, accessible, and interactive web
+                experiences. I enjoy turning ideas into functional digital products and continuously improving my skills
+                through real-world projects.</p>
+            <p>My goal is to deliver websites that are visually appealing, fast, accessible, and easy to maintain.</p>
+        </section>
+
+        <section>
+            <h2>Core Skills</h2>
+            <ul id="skillsList"></ul>
+        </section>
+
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="projects-grid" id="projects"></div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 thetobsdev | <a href="references.html">References</a></p>
+        <p>© 2026 Thetobsdev | Front-End Web Developer</p>
+        <a href="references.html">References</a>
     </footer>
-
-    <script src="scripts/main.js"></script>
 </body>
 
 </html>

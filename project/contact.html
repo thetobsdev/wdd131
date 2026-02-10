@@ -4,45 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>thetobsdev ✪ | Contact</title>
+    <meta name="description"
+        content="Contact Thetobsdev – professional web developer available for collaboration, freelance, and employment.">
+    <title>Thetobsdev | Contact</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles/main.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
     <header>
-        <div class="logo">thetobsdev <span class="star">✪</span></div>
+        <h1>Contact Me</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-            <a href="references.html">References</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
 
     <main>
-        <section id="contact-form">
-            <h1>Contact Me</h1>
-            <form id="form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" rows="5" required></textarea>
-
-                <button type="submit">Send</button>
-            </form>
-            <p id="form-response"></p>
+        <!-- Contact Intro -->
+        <section class="contact-intro">
+            <h2>Let’s Work Together</h2>
+            <p>
+                Have a project idea, collaboration opportunity, or job offer?
+                Fill out the form below and I’ll get back to you as soon as possible.
+            </p>
         </section>
+
+        <!-- Contact Form -->
+
+        <section class="contact-cards">
+            <div class="card">
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:tobilobaoluwasegun625@gmail.com">
+                        tobilobaoluwasegun625@gmail.com
+                    </a>
+                </p>
+            </div>
+        
+            <div class="card">
+                <h3>GitHub</h3>
+                <p>
+                    <a href="https://github.com/thetobsdev" target="_blank">
+                        github.com/thetobsdev
+                    </a>
+                </p>
+            </div>
+        
+            <div class="card">
+                <h3>LinkedIn</h3>
+                <p>
+                    <a href="https://www.linkedin.com/in/thetobsdev" aria-label="LinkedIn profile">
+                        linkedin.com/in/thetobsdev
+                    </a>
+                </p>
+            </div>
+        </section>
+        <section class="contact-form-section">
+            <form id="contactForm" novalidate>
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="purpose">Reason for Contact</label>
+                    <select id="purpose" name="purpose" required>
+                        <option value="">Select one</option>
+                        <option value="job">Job Opportunity</option>
+                        <option value="freelance">Freelance Project</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell me about your project or idea..." rows="5"
+                        required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+                <p id="formFeedback" aria-live="polite"></p>
+            </form>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 thetobsdev | <a href="references.html">References</a></p>
+        <p>© 2026 Thetobsdev | Front-End Web Developer</p>
+        <a href="references.html">References</a>
     </footer>
 
-    <script src="scripts/main.js"></script>
 </body>
 
 </html>
